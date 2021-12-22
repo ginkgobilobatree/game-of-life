@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+:root {
+    --first-layer: #424642;
+    --second-layer: #536162;
+    --third-layer: #C06014;
+    --fourth-layer: #F3F4ED;
+}
+/* oooooooooooooooooooooooooooooooooo */
+.console {
+    box-shadow: inset -3px 3px 15px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70rem;
+    height: 40rem;
+    border-radius: 7px;
+    background-color: var(--second-layer);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr {
+    width: 90%;
+    color: var(--third-layer);
+    background-color: var(--third-layer);
+    border: 1 px solid var(--third-layer);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* oooooooooooooooooooooooooooooooooo */
+
+.field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px -3px 15px #888888, -3px 3px 12px #0a0a0a;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dead {
+    background-color: var(--fourth-layer);
 }
 
-.App-link {
-  color: #61dafb;
+.alive {
+    background-color: var(--third-layer);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dead:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.alive:hover {
+    background-color: #86430c;
+    cursor: crosshair;
+}
+
+/* oooooooooooooooooooooooooooooooooo */
+
+button {
+    background-color: var(--third-layer);
 }
